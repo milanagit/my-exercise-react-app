@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// 1. Definišemo Funkcionalnu Komponentu
+function PrvaKomponenta() {
 
-function App() {
-  const [count, setCount] = useState(0)
-
+  // 2. Vraćamo JSX (HTML struktura)
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    // Pravilo 1: Sve mora biti unutar jednog korena elementa (koristimo div)
+    <div>
+      {/* Pravilo 2: Koristimo className umesto class */}
+      <h1 className="naslov">Dobrodošli u React!</h1>
+      
+      {/* Pravilo 3: Umetanje JS unutar vitica {} */}
+      <p>Datum učitavanja: {new Date().toLocaleDateString()}</p>
+      
+      <p>Ovo je prva komponenta, spremna za Props i State.</p>
+    </div>
+  );
 }
 
-export default App
+// 3. Exportujemo komponentu da bi je main.jsx mogao videti
+export default PrvaKomponenta;
