@@ -1,20 +1,34 @@
-// 1. Definišemo Funkcionalnu Komponentu
-function PrvaKomponenta() {
+// src/App.jsx
 
-  // 2. Vraćamo JSX (HTML struktura)
+import React from 'react';
+// Importovanje vaše Header komponente
+import Header from './components/Header'; 
+
+// Primer navigacionih linkova
+const menuLinks = [
+  { text: 'Početna', url: '/' },
+  { text: 'O nama', url: '/about' },
+  { text: 'Kontakt', url: '/contact' },
+];
+
+function App() {
   return (
-    // Pravilo 1: Sve mora biti unutar jednog korena elementa (koristimo div)
-    <div>
-      {/* Pravilo 2: Koristimo className umesto class */}
-      <h1 className="naslov">Dobrodošli u React!</h1>
+    <div className="App">
+      {/*
+        Renderovanje Header komponente i prosleđivanje 'props-a'
+        'title' i 'navItems' su prilagođeni props-i koje smo definisali.
+      */}
+      <Header 
+        title="Super Aplikacija" 
+        navItems={menuLinks} 
+      />
       
-      {/* Pravilo 3: Umetanje JS unutar vitica {} */}
-      <p>Datum učitavanja: {new Date().toLocaleDateString()}</p>
-      
-      <p>Ovo je prva komponenta, spremna za Props i State.</p>
+      <main>
+        {/* Ostali sadržaj aplikacije */}
+        <h2>Dobrodošli!</h2>
+      </main>
     </div>
   );
 }
 
-// 3. Exportujemo komponentu da bi je main.jsx mogao videti
-export default PrvaKomponenta;
+export default App;
