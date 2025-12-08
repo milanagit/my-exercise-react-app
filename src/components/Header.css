@@ -1,0 +1,46 @@
+/* src/components/Header.css */
+
+.main-header {
+  /* Osnovni raspored: postavlja elemente u red */
+  display: flex;
+  /* Poravnava elemente vertikalno */
+  align-items: center; 
+  /* Razdvaja naslov i navigaciju */
+  justify-content: space-between; 
+  
+  background-color: #282c34; /* Tamna pozadina */
+  color: white; /* Beli tekst */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  /* Uklanja podrazumevane margine za čistiji izgled */
+  margin: 0; 
+  font-size: 1.5em;
+}
+
+.main-header nav ul {
+  /* Uklanja podrazumevane oznake liste i margine */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Postavlja stavke navigacije u red */
+  display: flex; 
+}
+
+.main-header nav li {
+  margin-left: 20px; /* Razmak između linkova */
+}
+
+.main-header nav a {
+  /* Stil linka */
+  color: #61dafb; /* Plava boja linka (tipična React plava) */
+  text-decoration: none; /* Uklanja podvlačenje */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-header nav a:hover {
+  color: white; /* Promena boje prilikom prelaska mišem */
+}

@@ -1,6 +1,8 @@
 // src/components/Header.jsx
 
 import React from 'react';
+// 👈 OVDE UVEZITE CSS FAJL
+import './Header.css';
 
 // Ovo je funkcionalna komponenta
 const Header = (props) => {
