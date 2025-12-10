@@ -1,32 +1,21 @@
-// src/App.jsx
+// import React from 'react';
 
-import React from 'react';
-// Importovanje vaše Header komponente
-import Header from './components/Header'; 
+import "./App.css";
 
-// Primer navigacionih linkova
-const menuLinks = [
-  { text: 'Početna', url: '/' },
-  { text: 'O nama', url: '/about' },
-  { text: 'Kontakt', url: '/contact' },
-];
+function Welcome() {
+  return <h2>Welcome, People!</h2>;
+}
+
+function Button() {
+  return <button>Click Me</button>
+}
 
 function App() {
   return (
-    <div className="App">
-      {/*
-        Renderovanje Header komponente i prosleđivanje 'props-a'
-        'title' i 'navItems' su prilagođeni props-i koje smo definisali.
-      */}
-      <Header 
-        title="Super Aplikacija" 
-        navItems={menuLinks} 
-      />
-      
-      <main>
-        {/* Ostali sadržaj aplikacije */}
-        <h2>Dobrodošli!</h2>
-      </main>
+    <div>
+      <h1>Codevolution React Cours</h1>
+      <Welcome />
+      <Button />
     </div>
   );
 }
