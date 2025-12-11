@@ -1,14 +1,7 @@
-// import React from 'react';
-
+// import Welcome from "./Welcome";
+import { Welcome } from "./Welcome";
+import { Button } from "./Button";
 import "./App.css";
-
-function Welcome() {
-  return <h2>Welcome, People!</h2>;
-}
-
-function Button() {
-  return <button>Click Me</button>
-}
 
 function App() {
   return (
