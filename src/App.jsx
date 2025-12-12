@@ -1,14 +1,23 @@
 // import Welcome from "./Welcome";
 import { Welcome } from "./Welcome";
 import { Button } from "./Button";
+import { Hallo } from "./Hallo";
+import { HalloWithoutJSX } from "./Hallo";
+
+import { Card } from "./assets/Card";
+import { CardWithoutJSX } from "./assets/Card";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <h1>Codevolution React Cours</h1>
+      <Hallo />
+      <HalloWithoutJSX />
       <Welcome />
       <Button />
+
+      <Card />
+      <CardWithoutJSX />
     </div>
   );
 }
