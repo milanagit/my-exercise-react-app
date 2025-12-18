@@ -15,12 +15,16 @@ import "./App.css";
 function App() {
   return (
     <div>
+      <Welcome name='Bruce' alias='Batman' />
+      <Welcome name='Clark' alias='Superman' />
+      <Welcome name='Diana' alias='Wonder Woman' />
+
       <CandidateProfile />
       <StyleForm />
       <UserProfile />
       <Hallo />
       <HalloWithoutJSX />
-      <Welcome />
+      
       <Button />
       <ContactForm />
 
